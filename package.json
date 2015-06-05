@@ -1,0 +1,10 @@
+{
+  "name": "webpack-amok-dev-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "amok": "0.13.10",
+    "memory-fs": "0.2.0",
+    "express": "4.12.4",
+    "express-http-proxy": "0.6.0"
+  }
+}

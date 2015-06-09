@@ -84,7 +84,7 @@ WebpackAmokDevServer.prototype._runAmok = function() {
 
           inspector.setScriptSource(script, change.source, function(error) {
             if (error) {
-              console.error(error.description)
+              console.error(error)
               return
             }
 
@@ -92,7 +92,7 @@ WebpackAmokDevServer.prototype._runAmok = function() {
 
             inspector.evaluate(expr, function(error) {
               if (error) {
-                console.error('error %s', error.description)
+                console.error(error)
               }
             })
           })
@@ -136,7 +136,7 @@ WebpackAmokDevServer.prototype._runWebpack = function() {
       return
     }
 
-    // console.log(stats.toString())
+    console.log(stats.toString())
 
     if (notify) {
       changed = Object.keys(stats.compilation.assets)
@@ -144,12 +144,12 @@ WebpackAmokDevServer.prototype._runWebpack = function() {
           return stats.compilation.assets[key]
         })
         .filter(function(asset) {
-          return asset.emitted
+          return asset.emitted && !/.map$/.test(asset)
         })
         .map(function(asset) {
           return {
             file: asset.existsAt,
-            source: asset._cachedSource,
+            source: that._compiler.outputFileSystem.readFileSync(asset.existsAt).toString(),
           }
         })
 

@@ -1,6 +1,6 @@
 {
   "name": "webpack-amok-dev-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
     "amok": "1.0.0-2",
     "memory-fs": "0.2.0",

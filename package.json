@@ -1,10 +1,61 @@
 {
   "name": "webpack-amok-dev-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "description": "Amok for your webpack",
+  "keywords": [
+    "amok",
+    "amokjs",
+    "webpack",
+    "webpack dev server",
+    "hot reload",
+    "react hot reload"
+  ],
+  "homepage": "https://github.com/vslinko/webpack-amok-dev-server",
+  "bugs": {
+    "url": "https://github.com/vslinko/webpack-amok-dev-server/issues",
+    "email": "vslinko@yahoo.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vyacheslav Slinko",
+    "email": "vslinko@yahoo.com",
+    "url": "https://twitter.com/vslinko"
+  },
+  "contributors": [
+  ],
+  "main": "lib",
+  "bin": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "vslinko/webpack-amok-dev-server"
+  },
+  "scripts": {
+  },
+  "config": {
+  },
   "dependencies": {
     "amok": "1.0.0-2",
     "memory-fs": "0.2.0",
     "express": "4.12.4",
     "express-http-proxy": "0.6.0"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  },
+  "bundledDependencies": [
+  ],
+  "optionalDependencies": {
+  },
+  "engines": {
+  },
+  "os": [
+  ],
+  "cpu": [
+  ],
+  "preferGlobal": false,
+  "private": false,
+  "publishConfig": {
   }
 }

@@ -31,6 +31,7 @@
     "url": "vslinko/webpack-amok-dev-server"
   },
   "scripts": {
+    "lint": "eslint lib"
   },
   "config": {
   },
@@ -38,7 +39,8 @@
     "amok": "1.0.0-2",
     "memory-fs": "0.2.0",
     "express": "4.12.4",
-    "express-http-proxy": "0.6.0"
+    "express-http-proxy": "0.6.0",
+    "eslint": "0.23.0"
   },
   "devDependencies": {
   },
